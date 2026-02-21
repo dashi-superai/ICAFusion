@@ -11,6 +11,8 @@ d) confluence - returns most confluent box, removes false positives using conflu
 
 from collections import defaultdict
 import numpy as np
+import re
+
 
 def assign_boxes_to_classes(bounding_boxes, classes, scores):
     """
